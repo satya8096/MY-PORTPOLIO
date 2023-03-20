@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kalam:wght@400;700&family=Libre+Baskerville&family=Merriweather&family=Niconne&family=Oleo+Script&family=Shrikhand&family=Signika+Negative:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar-thumb{
+    background: yellow;
+}
+
+/* Aside back ground Styles */
+
+.asideback{
+    display: flex;
+    width: 100%;
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
+
+/* aside content styles */
+
+#aside{
+    background-color: rgb(31, 31, 31);
+    padding: 2% 0px 0px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    width: 25%;
+}
+#aside img{
+    width: 130px;
+    border-radius: 50%;
+    border: 4px solid #f9ca24;
+}
+#aside img:hover{
+    box-shadow: 0px 0px 9px white;
+    cursor: pointer;
+}
+.mainname:hover{
+    color: #f9ca24;
+}
+#aside h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#aside ul{
+    text-align: center;
+    display: inline-block;
+    margin-left: 0%;
+}
+#aside ul li{
+    list-style-type: none;
+    margin: 10px 0px;
+    border-radius: 20px;
+    background-color: rgb(57, 50, 50);
+}
+#aside ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 70px;
+    color: white;
+}
+#aside li:hover{
+    background-color: chocolate;
+    transition: all 0.4s;
+}
+
+/* Homepage Styles */
+
+.homepagecontentvisible{
+    width: 45%;
+    margin-left: 24%;
+}
+.about{
+    padding-top: 15%;
+    padding-left: 18%;
+    width: 100%;
+    margin-left: 15%;
+}
+.about span{
+    color: #f9ca24;
+}
+.about h3{
+    font-size: 30px;
+}
+.about p{
+    font-size: 20px;
+    line-height: 22px;
+    padding-right: 15px;
+}
+.homepara{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about button{
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    background-color: darkslategrey;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.about button:hover{
+    background-color: chocolate;
+    transition: all 0.4s;
+}
+
+/* About page Styles */
+
+.aboutmecontent{
+    margin-top: 60%;
+    margin-bottom: 0%;
+    margin-right: 10%;
+}
+.aboutmecontent h1{
+    text-align: center;
+}
+.aboutmecontent span{
+    color: #f9ca24;
+}
+.projecthead{
+    margin-top: 5%;
+}
+.details p{
+    height: 40px;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.boxes{
+    display: flex;
+    flex: 1 1 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.aboutallcontent{
+    flex: 1 1 40%;
+    flex-wrap: wrap;
+}
+.aboutallcontent .boxes .box{
+    text-align: center;
+    width: 60%;
+    padding: 10px;
+    background-color: darkslategrey;
+    margin: 10px;
+}
+.aboutallcontent .boxes .box a{
+    color: white;
+    animation: projectclick 3s infinite;
+}
+.aboutallcontent .boxes .box:hover{
+    background-color: #f9ca24;
+    transition: all 0.4s;
+    color: black;
+}
+
+/* Education page styles */
+
+.education{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.education i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9ca24;
+    color: white;
+    position: relative;
+    left: -49px;
+    top: -30px;
+    border-radius: 50%;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 25px;
+}
+.education .educationbox{
+    width: 40%;
+    margin: 30px 0px;
+    border-left: 3px solid white;
+    margin-left: 20px;
+    padding: 5px 0px 5px 25px;
+
+}
+.education p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.courseyear{
+    display: inline;
+    text-align: center;
+    background-color: darkslategrey;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+/* Certifications Page */
+
+.certifications ul{
+    margin-left: 35%;
+}
+.certifications ul li{
+    margin: 8% 1%;
+    list-style-type: square;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+.codingcontent{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 8% 11% 20% 2%;
+}
+.rhree{
+    margin-left: 7%;
+}
+
+
+/* Coding Profiles */
+
+/* .container1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20% 20% 20% 10%;
+}
+.container2{
+    display: flex;
+    margin: 20% 20% 20% 0%;
+} */
+
+
+
+/* .codingprofiles{
+    display: grid;
+    grid-auto-rows: auto;
+    flex: 1 1 40px;
+    flex-wrap: wrap;
+}
+.codingprofiles .codebox{
+    text-align: center;
+}
+.codingprofiles h4{
+    font-size: larger;
+} */
+
+
+/* Achivements Page Styles */
+
+.achivementscontent{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.achivepics{
+    padding: 10px;
+    width: 90%;
+    height: 70%;
+    text-align: center;
+}
+
+/* Contact Page Styles */
+
+.contactme{
+    display: flex;
+    margin-bottom: 20%;
+
+}
+.contactme i{
+    color: #f9ca24;
+    margin-right: 6px;
+}
+.contactme button i{
+    color: white;
+}
+.contactme h4{
+    font-size: large;
+}
+.contactme .contactinfo p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.contactinfo{
+    margin-top: 10%;
+}
+.contactform{
+    padding-left: 9%;
+    margin-top: 2%;
+}
+.contactform input{
+    padding: 4px 110px 4px 4px;
+    background-color: darkslategrey;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+.contactform button{
+    background-color: darkslategrey;
+    margin-left: 33%;
+}
+.contactform textarea{
+    background-color: darkslategrey;
+    border: none;
+    outline: none;
+    padding: 6px;
+    color: white;
+    border-radius: 3px;
+}
+
+/* Other Details page */
+
+.otherdetails{
+    margin-bottom: 2%;
+}
+.otherdetails p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.otherdetails h2{
+    color: #f9ca24;
+    margin-top: 2%;
+    margin-left: 35%;
+}
+.otherdetails .box{
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+/* home page name key frames */
+
+@keyframes homename{
+    0%{
+        color: #f9ca24;
+    }
+    100%{
+        color: white;
+    }
+}
+
+
+
+/* Name key Frames */
+@keyframes namevisible {
+    0%{
+        color: chocolate;
+    }
+    20%{
+        color: red;
+    }
+    40%{
+        color: rgb(23, 255, 23);
+    }
+    60%{
+        color: white;
+    }
+    80%{
+        color: rgb(255, 0, 51);
+    }
+    100%{
+        color: rgb(255, 4, 159);
+    }
+    
+}
+
+
+
+
+/* Project key frames */
+
+@keyframes projectclick {
+    0%{
+        color: #f9ca24;
+    }
+    20%{
+        color: red;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color: white;
+    }
+    80%{
+        color: crimson;
+    }
+    100%{
+        color: darkorange;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:710px) {
+    #aside ul{
+        text-align: center;
+        display: inline-block;
+        margin-left: 0%;
+    }
+    #aside ul li{
+        list-style-type: none;
+        margin: 10px 0px;
+        border-radius: 20px;
+        background-color: rgb(57, 50, 50);
+    }
+    #aside ul li a{
+        display: block;
+        text-decoration: none;
+        padding: 10px 50px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #aside ul li a{
+        padding: 10px 10px;
+        color: white;
+    }
+    #aside h2{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #aside ul li a{
+        padding: 10px 40px;
+        color: white;
+    }
+    #aside h2{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:300px) and (max-width:500px) {
+    #aside img{
+        width: 70px;
+    }
+    #aside ul li a{
+        padding: 10px 5px;
+        color: white;
+    }
+    #aside h2{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:0px) and (max-width:300px) {
+    #aside ul li a{
+        padding: 10px 0px;
+        color: white;
+    }
+    #aside img{
+        width: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* aside content Media quaries */
+/* 
+@media screen and (max-width:700px) {
+    .asidecontent h2{
+        font-size: 14px;
+    }
+    #aside img{
+        width: 70px;
+        border-radius: 50%;
+        border: 4px solid yellow;
+    }
+    #aside #a1{
+        padding: 9px 15%;
+    }
+    #aside #a2{
+        padding: 9px 15%;
+    }
+    #aside #a3{
+        padding: 9px 15%;
+    }
+    #aside #a4{
+        padding: 9px 15%;
+    }
+    #aside #a5{
+        padding: 9px 15%;
+    }
+    #aside #a6{
+        padding: 9px 10%;
+    }
+}
+
+@media  screen and (max-width:1050px) {
+    .asidecontent h2{
+        font-size: 13px;
+    }
+    #aside #a1{
+        padding: 9px 18%;
+    }
+    #aside #a2{
+        padding: 9px 18%;
+    }
+    #aside #a3{
+        padding: 9px 18%;
+    }
+    #aside #a4{
+        padding: 9px 18%;
+    }
+    #aside #a5{
+        padding: 9px 18%;
+    }
+    #aside #a6{
+        padding: 9px 18%;
+    }
+} */
